@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodPressureMAUI.Views.LogoutPage"
+             xmlns:strings="clr-namespace:BloodPressureMAUI.Resources.Strings"
+             Title="{x:Static strings:AppResources.LogoutTitle}">
+
+    <VerticalStackLayout>
+        <ActivityIndicator
+            Color="Blue"
+            IsEnabled="True"
+            IsVisible="True"
+        />
+    </VerticalStackLayout>
+    
+</ContentPage>

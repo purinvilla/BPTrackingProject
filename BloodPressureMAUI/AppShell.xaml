@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BloodPressureMAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BloodPressureMAUI"
+    xmlns:views="clr-namespace:BloodPressureMAUI.Views"
+    xmlns:strings="clr-namespace:BloodPressureMAUI.Resources.Strings"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"
+    />
+
+    <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate views:SettingsPage}"
+        Route="settings"
+    />
+
+    <ShellContent
+        Title="Logout"
+        ContentTemplate="{DataTemplate views:LogoutPage}"
+        Route="logout"
+    />
+
+    <TabBar Route="user">
+        <Tab
+            Title="{x:Static strings:AppResources.DataEntryTitle}"
+            Icon="notes.png"
+        >
+            <ShellContent
+                Title="{x:Static strings:AppResources.DataEntryTitle}"
+                ContentTemplate="{DataTemplate views:DataEntryPage}"
+                Route="dataentry"
+            />
+        </Tab>
+        
+        <Tab
+            Title="{x:Static strings:AppResources.DataViewTitle}"
+            Icon="calendar.png"
+        >
+            <ShellContent
+                Title="{x:Static strings:AppResources.DataViewTitle}"
+                ContentTemplate="{DataTemplate views:DataViewPage}"
+                Route="dataview"
+            />
+        </Tab>
+    </TabBar>
+
+</Shell>

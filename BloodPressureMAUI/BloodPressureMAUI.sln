@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloodPressureMAUI", "BloodPressureMAUI.csproj", "{EA0EB536-ECEA-424E-AC77-910F8BAF7250}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA0EB536-ECEA-424E-AC77-910F8BAF7250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0EB536-ECEA-424E-AC77-910F8BAF7250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0EB536-ECEA-424E-AC77-910F8BAF7250}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EA0EB536-ECEA-424E-AC77-910F8BAF7250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0EB536-ECEA-424E-AC77-910F8BAF7250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0EB536-ECEA-424E-AC77-910F8BAF7250}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B3C62A4-B3A1-4A2A-A83A-86AA92060665}
+	EndGlobalSection
+EndGlobal

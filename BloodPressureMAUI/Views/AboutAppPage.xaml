@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodPressureMAUI.Views.AboutAppPage"
+             xmlns:strings="clr-namespace:BloodPressureMAUI.Resources.Strings"
+             Title="{x:Static strings:AppResources.AboutAppTitle}">
+    
+    <VerticalStackLayout
+        Margin="10,10,10,0"
+    >
+        <VerticalStackLayout
+            Margin="0,0,0,20"
+        >
+            <Label 
+                Text="Created by"
+                FontAttributes="Bold"
+                FontSize="14"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center" 
+            />
+            <Label 
+                Text="Patrick Sakamornlertsakul"
+                TextColor="CornflowerBlue"
+                FontAttributes="Bold"
+                FontSize="20"
+                Margin="0,0,0,15"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center" 
+            />
+            <Label 
+                Text="patrick_sak@hotmail.com"
+                FontAttributes="Bold"
+                FontSize="12"
+                Margin="0,0,0,15"
+                TextDecorations="Underline"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center" 
+            />
+            <Border HeightRequest="220" 
+                    WidthRequest="220"
+                    StrokeShape="RoundRectangle 110,110,110,110"
+                    HorizontalOptions="Center"                    
+                    StrokeThickness="8"
+                    Margin="0,0,0,0">
+                <Image Source="developer.png" />
+            </Border>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            Margin="0,0,0,20"
+        >
+            <Label 
+                Text="❤️❤️❤️"
+                FontSize="14"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center" 
+            />
+            <Label 
+                Text="Made to replace my lovely grandmother's paper logging, with love."
+                FontSize="14"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center" 
+            />
+            <Label 
+                Text="❤️❤️❤️"
+                FontSize="14"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center" 
+            />
+        </VerticalStackLayout>
+
+        <Label
+            Text="Credit to Freepik for some of the icons used in this app."
+            FontSize="10"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+        />
+    </VerticalStackLayout>
+
+</ContentPage>

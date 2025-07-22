@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodPressureMAUI.Views.SettingsPage"
+             xmlns:vm="clr-namespace:BloodPressureMAUI.ViewModels"
+             xmlns:strings="clr-namespace:BloodPressureMAUI.Resources.Strings"
+             x:DataType="vm:SettingsViewModel"
+             Title="{x:Static strings:AppResources.SettingsTitle}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="15"
+            VerticalOptions="Start"
+        >
+            <!-- API Host Name -->
+            <Border
+                Padding="10, 5"
+            >
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="6, 6, 6, 6" />
+                </Border.StrokeShape>
+                
+                <VerticalStackLayout>
+                    <Label 
+                        Text="{x:Static strings:AppResources.APIHostSetting}"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Margin="0, 0, 0, -5"
+                    />
+                    <Entry
+                        Text="{Binding ApiHostLocation}"
+                        Placeholder="http://localhost:8080"
+                        PlaceholderColor="Gray"
+                    />
+                </VerticalStackLayout>
+            </Border>
+            
+            <!-- Send Alert Setting -->
+            <Border
+                Padding="10,5"
+            >
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="6, 6, 6, 6" />
+                </Border.StrokeShape>
+                
+                <VerticalStackLayout>
+                    <Label 
+                        Text="{x:Static strings:AppResources.AlertSettingLabel}"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                    />
+                    <Label 
+                        Text="{x:Static strings:AppResources.AlertSettingDesc}"
+                        Margin="3, 5, 3, 0"
+                    />
+
+                    <!-- Systolic Alarm Range -->
+                    <HorizontalStackLayout
+                        Margin="10, 0, 0, 0"
+                    >
+                        <Label 
+                            Text="{x:Static strings:AppResources.SystolicTextShort}"
+                            FontAttributes="Bold"
+                            Margin="0, 0, 5, 0"
+                            VerticalOptions="Center"
+                            MinimumWidthRequest="60"
+                        />
+                        <Label 
+                            Text="{x:Static strings:AppResources.OverLabel}"
+                            VerticalOptions="Center"
+                            Margin="0, 0, 5, 0"
+                        />
+                        <Entry
+                            Text="{Binding SystolicAlarmUpper}"
+                            Placeholder="180"
+                            Keyboard="Numeric"
+                            Margin="0, -5, 5, 0"
+                            PlaceholderColor="Gray"
+                            HorizontalTextAlignment="Center"
+                            MinimumWidthRequest="70"
+                        />
+                        <Label 
+                            Text="{x:Static strings:AppResources.UnderLabel}"
+                            VerticalOptions="Center"
+                            Margin="0, 0, 5, 0"
+                        />
+                        <Entry
+                            Text="{Binding SystolicAlarmLower}"
+                            Placeholder="90"
+                            Keyboard="Numeric"
+                            Margin="0, -5, 5, 0"
+                            PlaceholderColor="Gray"
+                            HorizontalTextAlignment="Center"
+                            MinimumWidthRequest="70"
+                        />
+                    </HorizontalStackLayout>
+
+                    <!-- Diastolic Alarm Range -->
+                    <HorizontalStackLayout
+                        Margin="10, -5, 0, 0"
+                    >
+                        <Label 
+                            Text="{x:Static strings:AppResources.DiastolicTextShort}"
+                            FontAttributes="Bold"
+                            Margin="0, 0, 5, 0"
+                            VerticalOptions="Center"
+                            MinimumWidthRequest="60"
+                        />
+                        <Label 
+                            Text="{x:Static strings:AppResources.OverLabel}"
+                            VerticalOptions="Center"
+                            Margin="0, 0, 5, 0"
+                        />
+                        <Entry
+                            Text="{Binding DiastolicAlarmUpper}"
+                            Placeholder="120"
+                            Keyboard="Numeric"
+                            Margin="0, -5, 5, 0"
+                            PlaceholderColor="Gray"
+                            HorizontalTextAlignment="Center"
+                            MinimumWidthRequest="70"
+                        />
+                        <Label 
+                            Text="{x:Static strings:AppResources.UnderLabel}"
+                            VerticalOptions="Center"
+                            Margin="0, 0, 5, 0"
+                        />
+                        <Entry
+                            Text="{Binding DiastolicAlarmLower}"
+                            Placeholder="60"
+                            Keyboard="Numeric"
+                            Margin="0, -5, 0, 0"
+                            PlaceholderColor="Gray"
+                            HorizontalTextAlignment="Center"
+                            MinimumWidthRequest="70"
+                        />
+                    </HorizontalStackLayout>
+
+                    <!-- Authorized Phone Numbers-->
+                    <Label 
+                        Text="{x:Static strings:AppResources.PhoneNumberLabel}"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                    />
+                    <Label 
+                        Text="{x:Static strings:AppResources.PhoneNumberDesc}"
+                        Margin="3, 5, 3, 0"
+                    />
+                    <Entry
+                        Text="{Binding SavedPhoneNumbers}"
+                        Placeholder="650-555-1212"
+                        Keyboard="Telephone"
+                        Margin="0, -5, 0, 0"
+                        PlaceholderColor="Gray"
+                    />
+                </VerticalStackLayout>
+            </Border>
+
+            <Button
+                Text="{x:Static strings:AppResources.SaveBtn}"
+                Command="{Binding SaveSettingsCommand}"
+                CornerRadius="20"
+                HorizontalOptions="Center" 
+                WidthRequest="100"
+            />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

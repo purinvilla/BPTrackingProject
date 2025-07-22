@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodPressureMAUI.Views.DataEditPage"
+             xmlns:vm="clr-namespace:BloodPressureMAUI.ViewModels"
+             xmlns:strings="clr-namespace:BloodPressureMAUI.Resources.Strings"
+             x:DataType="vm:DataEditViewModel"
+             Shell.TabBarIsVisible="False"
+             Title="{x:Static strings:AppResources.DataEditTitle}">
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="30,10,30,0"
+            VerticalOptions="Start"
+        >
+
+            <VerticalStackLayout
+                Margin="0,0,0,5"
+                Spacing="5"
+            >
+                <Label
+                    Text="{x:Static strings:AppResources.DataEditLabel}"
+                    FontSize="28"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Gray"
+                />
+                <Label
+                    Text="{x:Static strings:AppResources.DataEntryMessage}"
+                    FontSize="18"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Gray"
+                />
+            </VerticalStackLayout>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="{x:Static strings:AppResources.SystolicText}"
+                    FontSize="18"
+                    TextColor="Gray"
+                    VerticalOptions="Center"
+                />
+                <Entry
+                    Text="{Binding Systolic}"
+                    FontSize="18"
+                    Grid.Column="1"
+                    Keyboard="Numeric"
+                    MaxLength="3"
+                    WidthRequest="80"
+                />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="{x:Static strings:AppResources.DiastolicText}"
+                    FontSize="18"
+                    TextColor="Gray"
+                    VerticalOptions="Center"
+                />
+                <Entry
+                    Text="{Binding Diastolic}"
+                    FontSize="18"
+                    Grid.Column="1"
+                    Keyboard="Numeric"
+                    MaxLength="3"
+                    WidthRequest="80"
+                />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.5*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="{x:Static strings:AppResources.HeartrateText}"
+                    FontSize="18"
+                    TextColor="Gray"
+                    VerticalOptions="Center"
+                />
+                <Entry
+                    Text="{Binding Heartrate}"
+                    FontSize="18"
+                    Grid.Column="1"
+                    Keyboard="Numeric"
+                    MaxLength="3"
+                    WidthRequest="80"
+                />
+            </Grid>
+
+            <Button
+                Text="{x:Static strings:AppResources.UpdateDataBtn}"
+                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:DataEditViewModel}}, Path=UpdateDataCommand}"
+                CornerRadius="20"
+                HorizontalOptions="Center" 
+                WidthRequest="100"
+            />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

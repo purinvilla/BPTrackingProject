@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodPressureMAUI.Views.RegistrationPage"
+             xmlns:vm="clr-namespace:BloodPressureMAUI.ViewModels"
+             xmlns:strings="clr-namespace:BloodPressureMAUI.Resources.Strings"
+             x:DataType="vm:RegisterViewModel"
+             Title="{x:Static strings:AppResources.RegistrationTitle}">
+
+    <VerticalStackLayout 
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center"
+    >
+        <VerticalStackLayout Spacing="5">
+            <Label
+                Text="{x:Static strings:AppResources.RegisterLabel}"
+                FontSize="28"
+                HorizontalTextAlignment="Center"
+                TextColor="Gray"
+            />
+            <Label
+                Text="{x:Static strings:AppResources.RegisterMessage}"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                TextColor="Gray"
+            />
+        </VerticalStackLayout>
+        
+        <Entry
+            Text="{Binding Username}"
+            Placeholder="{x:Static strings:AppResources.UsernamePlaceholder}"
+            WidthRequest="330"
+        />
+        
+        <Entry
+            Text="{Binding UserEmail}"
+            Placeholder="{x:Static strings:AppResources.EmailPlaceholder}"
+            WidthRequest="330"
+        />
+
+        <Entry
+            Text="{Binding Password}"
+            IsPassword="True"
+            Placeholder="{x:Static strings:AppResources.PasswordPlaceholder}"
+            WidthRequest="330"
+        />
+
+        <Entry
+            Text="{Binding ConfirmPassword}"
+            IsPassword="True"
+            Placeholder="{x:Static strings:AppResources.ConfirmPassword}"
+            WidthRequest="330"
+        />
+
+        <Button
+            Text="{x:Static strings:AppResources.RegisterBtn}"
+            Command="{Binding RegisterCommand}"
+            CornerRadius="20"
+            HorizontalOptions="Center" 
+            WidthRequest="100"
+        />
+
+        <Button
+            Text="{x:Static strings:AppResources.BackBtn}"
+            Command="{Binding GoBackCommand}"
+            CornerRadius="20"
+            HorizontalOptions="Center" 
+            WidthRequest="100"
+        />
+    </VerticalStackLayout>
+
+</ContentPage>

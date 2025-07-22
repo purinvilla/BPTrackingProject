@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="LoginMessage" xml:space="preserve">
+    <value>Login to your account</value>
+    <comment>Page description</comment>
+  </data>
+  <data name="RegisterLabel" xml:space="preserve">
+    <value>User Registration</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="RegisterMessage" xml:space="preserve">
+    <value>Please fill in the information below.</value>
+    <comment>Page description</comment>
+  </data>
+  <data name="DataEntryLabel" xml:space="preserve">
+    <value>Enter new data</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="DataEntryMessage" xml:space="preserve">
+    <value>Entry for today</value>
+    <comment>Page description</comment>
+  </data>
+  <data name="UsernamePlaceholder" xml:space="preserve">
+    <value>Username</value>
+    <comment>Entry placeholder text</comment>
+  </data>
+  <data name="EmailPlaceholder" xml:space="preserve">
+    <value>Email</value>
+    <comment>Entry placeholder text</comment>
+  </data>
+  <data name="PasswordPlaceholder" xml:space="preserve">
+    <value>Password</value>
+    <comment>Entry placeholder text</comment>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+    <comment>Entry placeholder text</comment>
+  </data>
+  <data name="SystolicText" xml:space="preserve">
+    <value>Systolic Blood Pressure</value>
+    <comment>Data entry/edit text</comment>
+  </data>
+  <data name="DiastolicText" xml:space="preserve">
+    <value>Diastolic Blood Pressure</value>
+    <comment>Data entry/edit text</comment>
+  </data>
+  <data name="HeartrateText" xml:space="preserve">
+    <value>Heart Rate</value>
+    <comment>Data entry/edit text</comment>
+  </data>
+  <data name="SignInBtn" xml:space="preserve">
+    <value>Sign In</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="RegisterBtn" xml:space="preserve">
+    <value>Register</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>Go Back</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="AddDataBtn" xml:space="preserve">
+    <value>Add Data</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="ConfirmPasswordFailed" xml:space="preserve">
+    <value>Did not correctly confirm password.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="DataEntryFailed" xml:space="preserve">
+    <value>Data Entry Failed 🥺</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="DataEntryFailedMessage" xml:space="preserve">
+    <value>Failed to add new blood pressure data.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="DataEntrySuccess" xml:space="preserve">
+    <value>Data Entry Success 😃</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="DataEntrySuccessMessage" xml:space="preserve">
+    <value>New blood pressure data added.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Invalid email or password.</value>
+    <comment>Error alert message</comment>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Login Failed 🥺</value>
+    <comment>Error alert title</comment>
+  </data>
+  <data name="LoginFailedMessage" xml:space="preserve">
+    <value>Failed to log in to account.</value>
+    <comment>Error alert message</comment>
+  </data>
+  <data name="LoginSuccess" xml:space="preserve">
+    <value>Login Success 😃</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="LoginSuccessMessage" xml:space="preserve">
+    <value>Successfully logged in to account.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="MissingField" xml:space="preserve">
+    <value>Missing field detected.</value>
+    <comment>Error alert message</comment>
+  </data>
+  <data name="OKPrompt" xml:space="preserve">
+    <value>OK</value>
+    <comment>Display alert cancel</comment>
+  </data>
+  <data name="RegistationSuccessMessage" xml:space="preserve">
+    <value>Account successfully registered.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="RegistrationFailed" xml:space="preserve">
+    <value>Registration Failed 🥺</value>
+    <comment>Error alert title</comment>
+  </data>
+  <data name="RegistrationFailedMessage" xml:space="preserve">
+    <value>Failed to register account.</value>
+    <comment>Error alert message</comment>
+  </data>
+  <data name="RegistrationSuccess" xml:space="preserve">
+    <value>Registration Success 😃</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Login</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="RegistrationTitle" xml:space="preserve">
+    <value>Registration</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="DataEntryTitle" xml:space="preserve">
+    <value>Data Entry</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="DataViewTitle" xml:space="preserve">
+    <value>Data View</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="DataNotFound" xml:space="preserve">
+    <value>Data Not Found 🥺</value>
+    <comment>Error alert title</comment>
+  </data>
+  <data name="DataNotFoundMessage" xml:space="preserve">
+    <value>Failed to retrieve data.</value>
+    <comment>Error alert message</comment>
+  </data>
+  <data name="LogoutSuccess" xml:space="preserve">
+    <value>Logout Success 😃</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="LogoutSuccessMessage" xml:space="preserve">
+    <value>Successfully logged out of account.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="LogoutTitle" xml:space="preserve">
+    <value>Logout</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="AboutAppTitle" xml:space="preserve">
+    <value>About App</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="DateText" xml:space="preserve">
+    <value>Date</value>
+    <comment>Data view text</comment>
+  </data>
+  <data name="TimeText" xml:space="preserve">
+    <value>Time</value>
+    <comment>Data view text</comment>
+  </data>
+  <data name="HeartText" xml:space="preserve">
+    <value>Heart Rate</value>
+    <comment>Data view text</comment>
+  </data>
+  <data name="FromDateText" xml:space="preserve">
+    <value>From:</value>
+    <comment>Data view text</comment>
+  </data>
+  <data name="ToDateText" xml:space="preserve">
+    <value>To:</value>
+    <comment>Data view text</comment>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>Delete Success 😃</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="DeleteSuccessMessage" xml:space="preserve">
+    <value>Data was deleted successfully.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="DataEditLabel" xml:space="preserve">
+    <value>Editing data</value>
+    <comment>Page description</comment>
+  </data>
+  <data name="DataEditTitle" xml:space="preserve">
+    <value>Data Editing</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="UpdateDataBtn" xml:space="preserve">
+    <value>Update Data</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="UpdateSuccess" xml:space="preserve">
+    <value>Update Success 😃</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="UpdateSuccessMessage" xml:space="preserve">
+    <value>Blood pressure data was updated successfully.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>Update Failed 🥺</value>
+    <comment>Error alert title</comment>
+  </data>
+  <data name="UpdateFailedMessage" xml:space="preserve">
+    <value>Failed to update blood pressure data.</value>
+    <comment>Error alert message</comment>
+  </data>
+  <data name="SearchBtn" xml:space="preserve">
+    <value>🔍 Search</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="ResetDateBtn" xml:space="preserve">
+    <value>📅 Reset Date</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>Save password</value>
+    <comment>Login page text</comment>
+  </data>
+  <data name="DataViewFailed" xml:space="preserve">
+    <value>Data Retrieval Failed 🥺</value>
+    <comment>Error alert title</comment>
+  </data>
+  <data name="DataViewFailedMessage" xml:space="preserve">
+    <value>Failed to retrieve data for viewing.</value>
+    <comment>Error alert message</comment>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>Settings Saved 😃</value>
+    <comment>Display alert title</comment>
+  </data>
+  <data name="SettingsSavedMessage" xml:space="preserve">
+    <value>Your settings were saved successfully.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Page title</comment>
+  </data>
+  <data name="APIHostSetting" xml:space="preserve">
+    <value>API Host Name</value>
+    <comment>Setting</comment>
+  </data>
+  <data name="APIHostSettingDesc" xml:space="preserve">
+    <value>The location of the REST API.</value>
+    <comment>Setting description</comment>
+  </data>
+  <data name="SaveBtn" xml:space="preserve">
+    <value>Save</value>
+    <comment>Button text</comment>
+  </data>
+  <data name="SettingsNotSaved" xml:space="preserve">
+    <value>Settings Not Saved 🥺</value>
+    <comment>Error alert title</comment>
+  </data>
+  <data name="DateTotalMax" xml:space="preserve">
+    <value>Only 30 days of data can be viewed at a time.</value>
+    <comment>Display alert message</comment>
+  </data>
+  <data name="AlertSettingLabel" xml:space="preserve">
+    <value>Blood Pressure Alarm Values</value>
+    <comment>Setting</comment>
+  </data>
+  <data name="PhoneNumberLabel" xml:space="preserve">
+    <value>Authorized Phone Numbers</value>
+    <comment>Setting</comment>
+  </data>
+  <data name="SMSMessage" xml:space="preserve">
+    <value>Alert!!! for {0}</value>
+    <comment>Data entry/edit text</comment>
+  </data>
+  <data name="AlertSettingDesc" xml:space="preserve">
+    <value>Sends an SMS whenever new data for blood pressure out of the ranges set below.</value>
+    <comment>Setting description</comment>
+  </data>
+  <data name="PhoneNumberDesc" xml:space="preserve">
+    <value>The phone numbers that will be sent alerts. (Separate new numbers with commas , ).</value>
+    <comment>Setting description</comment>
+  </data>
+  <data name="SystolicTextShort" xml:space="preserve">
+    <value>Systolic:</value>
+    <comment>Setting text</comment>
+  </data>
+  <data name="DiastolicTextShort" xml:space="preserve">
+    <value>Diastolic:</value>
+    <comment>Setting text</comment>
+  </data>
+  <data name="InvalidAlarmRange" xml:space="preserve">
+    <value>Provided alarm range for systolic/diastolic blood pressure is invalid.</value>
+    <comment>Error alert message</comment>
+  </data>
+  <data name="OverLabel" xml:space="preserve">
+    <value>Over</value>
+    <comment>Setting text</comment>
+  </data>
+  <data name="UnderLabel" xml:space="preserve">
+    <value>Under</value>
+    <comment>Setting text</comment>
+  </data>
+  <data name="SMSMessageSystolic" xml:space="preserve">
+    <value>Systolic value = {0} (Range {1} - {2}).</value>
+    <comment>Data entry/edit text</comment>
+  </data>
+  <data name="SMSMessageDiastolic" xml:space="preserve">
+    <value>Diastolic value = {0} (Range {1} - {2}).</value>
+    <comment>Data entry/edit text</comment>
+  </data>
+  <data name="DataEditIconLabel" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Edit Icon Label</comment>
+  </data>
+  <data name="DataDeleteIconLabel" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Del Icon Label</comment>
+  </data>
+</root>

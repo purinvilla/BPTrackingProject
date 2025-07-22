@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Welcome" xml:space="preserve">
+    <value>ยินดีต้อนรับ!</value>
+  </data>
+  <data name="LoginMessage" xml:space="preserve">
+    <value>กรุณาเข้าระบบเพื่อใช้งาน</value>
+  </data>
+  <data name="RegisterLabel" xml:space="preserve">
+    <value>ลงทะเบียนผู้ใช้งาน</value>
+  </data>
+  <data name="RegisterMessage" xml:space="preserve">
+    <value>กรุณากรอกข้อมูล</value>
+  </data>
+  <data name="DataEntryLabel" xml:space="preserve">
+    <value>ข้อมูลใหม่</value>
+  </data>
+  <data name="DataEntryMessage" xml:space="preserve">
+    <value>ข้อมูลสำหรับวันนี้</value>
+  </data>
+  <data name="UsernamePlaceholder" xml:space="preserve">
+    <value>ชื่อผู้ใช้(อีเมล์)</value>
+  </data>
+  <data name="EmailPlaceholder" xml:space="preserve">
+    <value>อีเมล์</value>
+  </data>
+  <data name="PasswordPlaceholder" xml:space="preserve">
+    <value>ระหัสผ่าน</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>ยืนยันระหัสผ่าน</value>
+  </data>
+  <data name="SystolicText" xml:space="preserve">
+    <value>ค่าด้านสูง (SYS)</value>
+  </data>
+  <data name="DiastolicText" xml:space="preserve">
+    <value>ค่าด้านต่ำ (DIA)</value>
+  </data>
+  <data name="HeartrateText" xml:space="preserve">
+    <value>อัตราการเต้นของหัวใจ</value>
+  </data>
+  <data name="SignInBtn" xml:space="preserve">
+    <value>เข้าระบบ</value>
+  </data>
+  <data name="RegisterBtn" xml:space="preserve">
+    <value>ลงทะเบียน</value>
+  </data>
+  <data name="BackBtn" xml:space="preserve">
+    <value>ย้อนกลับ</value>
+  </data>
+  <data name="AddDataBtn" xml:space="preserve">
+    <value>บันทึกข้อมูล</value>
+  </data>
+  <data name="ConfirmPasswordFailed" xml:space="preserve">
+    <value>ระหัสผ่านไม่ตรงกัน</value>
+  </data>
+  <data name="DataEntryFailed" xml:space="preserve">
+    <value>บันทึกข้อมูลมีปัญหา 🥺</value>
+  </data>
+  <data name="DataEntryFailedMessage" xml:space="preserve">
+    <value>ไม่สามารถบันทึกข้อมูลได้</value>
+  </data>
+  <data name="DataEntrySuccess" xml:space="preserve">
+    <value>การบันทึกข้อมูลสำเร็จ 😃</value>
+  </data>
+  <data name="DataEntrySuccessMessage" xml:space="preserve">
+    <value>ข้อมูลใหม่ได้รับการบันทึก</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>อีเมล์ หรือ ระหัสผ่าน ไม่ถูกต้อง</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>เข้าระบบมีปัญหา 🥺</value>
+  </data>
+  <data name="LoginFailedMessage" xml:space="preserve">
+    <value>ไม่สามารถเข้าระบบได้</value>
+  </data>
+  <data name="LoginSuccess" xml:space="preserve">
+    <value>เข้าระบบสำเร็จ 😃</value>
+  </data>
+  <data name="LoginSuccessMessage" xml:space="preserve">
+    <value>เข้าระบบได้เรียบร้อย</value>
+  </data>
+  <data name="MissingField" xml:space="preserve">
+    <value>กรอกข้อมูลไม่ครบ</value>
+  </data>
+  <data name="OKPrompt" xml:space="preserve">
+    <value>ตกลง</value>
+  </data>
+  <data name="RegistationSuccessMessage" xml:space="preserve">
+    <value>ลงทะเบียนได้เรียบร้อย</value>
+  </data>
+  <data name="RegistrationFailed" xml:space="preserve">
+    <value>ลงทะเบียนไม่ผ่าน 🥺</value>
+  </data>
+  <data name="RegistrationFailedMessage" xml:space="preserve">
+    <value>ลงทะเบียนไม่ผ่าน</value>
+  </data>
+  <data name="RegistrationSuccess" xml:space="preserve">
+    <value>ลงทะเบียนสำเร็จ 😃</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>เข้าระบบ</value>
+  </data>
+  <data name="RegistrationTitle" xml:space="preserve">
+    <value>ลงทะเบียน</value>
+  </data>
+  <data name="DataEntryTitle" xml:space="preserve">
+    <value>บันทึกข้อมูล</value>
+  </data>
+  <data name="DataViewTitle" xml:space="preserve">
+    <value>ดูข้อมูล</value>
+  </data>
+  <data name="DataNotFound" xml:space="preserve">
+    <value>ไม่พบข้อมูล 🥺</value>
+  </data>
+  <data name="DataNotFoundMessage" xml:space="preserve">
+    <value>ดึงข้อมูลล้มเหลว</value>
+  </data>
+  <data name="LogoutSuccess" xml:space="preserve">
+    <value>ออกจากระบบสำเร็จ 😃</value>
+  </data>
+  <data name="LogoutSuccessMessage" xml:space="preserve">
+    <value>ออกจากระบบสำเร็จ</value>
+  </data>
+  <data name="LogoutTitle" xml:space="preserve">
+    <value>ออกจากระบบ</value>
+  </data>
+  <data name="AboutAppTitle" xml:space="preserve">
+    <value>เกี่ยวกับโปรแกรม</value>
+  </data>
+  <data name="DateText" xml:space="preserve">
+    <value>วันที่</value>
+  </data>
+  <data name="TimeText" xml:space="preserve">
+    <value>เวลา</value>
+  </data>
+  <data name="HeartText" xml:space="preserve">
+    <value>หัวใจ</value>
+  </data>
+  <data name="FromDateText" xml:space="preserve">
+    <value>วันที่:</value>
+  </data>
+  <data name="ToDateText" xml:space="preserve">
+    <value>ถึง:</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>ลบข้อมูลสำเร็จ 😃</value>
+  </data>
+  <data name="DeleteSuccessMessage" xml:space="preserve">
+    <value>ลบข้อมูลแล้ว</value>
+  </data>
+  <data name="DataEditLabel" xml:space="preserve">
+    <value>แก้ไขข้อมูล</value>
+  </data>
+  <data name="DataEditTitle" xml:space="preserve">
+    <value>แก้ไขข้อมูลล้มเหลว</value>
+  </data>
+  <data name="UpdateDataBtn" xml:space="preserve">
+    <value>แก้ไขข้อมูล</value>
+  </data>
+  <data name="UpdateSuccess" xml:space="preserve">
+    <value>แก้ไขสำเร็จ 😃</value>
+  </data>
+  <data name="UpdateSuccessMessage" xml:space="preserve">
+    <value>แก้ไขข้อมูลความดันโลหิตสำเร็จ</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>แก้ไขข้อมูลล้มเหลว 🥺</value>
+  </data>
+  <data name="UpdateFailedMessage" xml:space="preserve">
+    <value>แก้ไขข้อมูลความดันโลหิตล้มเหลว</value>
+  </data>
+  <data name="SearchBtn" xml:space="preserve">
+    <value>🔍 ค้นหา</value>
+  </data>
+  <data name="ResetDateBtn" xml:space="preserve">
+    <value>📅 วันที่ปัจจุบัน</value>
+  </data>
+  <data name="SavePassword" xml:space="preserve">
+    <value>บันทึกระหัสผ่าน</value>
+  </data>
+  <data name="DataViewFailed" xml:space="preserve">
+    <value>ไม่สามารถดึงข้อมูลได้</value>
+  </data>
+  <data name="DataViewFailedMessage" xml:space="preserve">
+    <value>ไม่สามารถดึงข้อมูลมาดูได้</value>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>บันทึกเรียบร้อย 😃</value>
+  </data>
+  <data name="SettingsSavedMessage" xml:space="preserve">
+    <value>การตั้งค่าระบบได้รับการบันทึกเรียบร้อย</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>การตั้งค่าระบบ</value>
+  </data>
+  <data name="APIHostSetting" xml:space="preserve">
+    <value>ชื่อโฮสของ API</value>
+  </data>
+  <data name="APIHostSettingDesc" xml:space="preserve">
+    <value>ตำแหน่งของ REST API</value>
+  </data>
+  <data name="SaveBtn" xml:space="preserve">
+    <value>บันทึก</value>
+  </data>
+  <data name="SettingsNotSaved" xml:space="preserve">
+    <value>ไม่สามารถบันทึกได้ 🥺</value>
+  </data>
+  <data name="DateTotalMax" xml:space="preserve">
+    <value>ตั้งค่าวันเริ่มต้นเป็น 30 วันก่อนหน้า</value>
+  </data>
+  <data name="AlertSettingLabel" xml:space="preserve">
+    <value>แจ้งเตือนค่าความดัน</value>
+  </data>
+  <data name="PhoneNumberLabel" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์</value>
+  </data>
+  <data name="SMSMessage" xml:space="preserve">
+    <value>คำเตือน!!! สำหรับ {0}</value>
+  </data>
+  <data name="AlertSettingDesc" xml:space="preserve">
+    <value>แจ้งเตือนเมื่อความดันนอกช่วงตามข้างล่างนี้</value>
+  </data>
+  <data name="PhoneNumberDesc" xml:space="preserve">
+    <value>เบอร์โทรศัพท์สำหรับแจ้งเตือน(แยกเบอร์ด้วย , ) </value>
+  </data>
+  <data name="SystolicTextShort" xml:space="preserve">
+    <value>Systolic:</value>
+  </data>
+  <data name="DiastolicTextShort" xml:space="preserve">
+    <value>Diastolic:</value>
+  </data>
+  <data name="InvalidAlarmRange" xml:space="preserve">
+    <value>ค่าช่วงความดันไม่ถูกต้อง</value>
+  </data>
+  <data name="OverLabel" xml:space="preserve">
+    <value>มากกว่า</value>
+  </data>
+  <data name="UnderLabel" xml:space="preserve">
+    <value>น้อยกว่า</value>
+  </data>
+  <data name="SMSMessageSystolic" xml:space="preserve">
+    <value>ค่าความดันค่าสูง = {0} (ช่วง {1} ถึง {2}).</value>
+  </data>
+  <data name="SMSMessageDiastolic" xml:space="preserve">
+    <value>ค่าความดันค่าต่ำ = {0} (ช่วง {1} ถึง {2}).</value>
+  </data>
+  <data name="DataEditIconLabel" xml:space="preserve">
+    <value>แก้ไข</value>
+  </data>
+  <data name="DataDeleteIconLabel" xml:space="preserve">
+    <value>ลบ</value>
+  </data>
+</root>

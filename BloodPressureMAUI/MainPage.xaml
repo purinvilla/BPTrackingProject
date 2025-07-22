@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodPressureMAUI.MainPage"
+             xmlns:vm="clr-namespace:BloodPressureMAUI.ViewModels"
+             xmlns:strings="clr-namespace:BloodPressureMAUI.Resources.Strings"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="vm:LoginViewModel"
+             Title="{x:Static strings:AppResources.LoginTitle}"
+             x:Name="Page">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="30,0"
+            VerticalOptions="Center"
+        >
+            <Image
+                Source="blood_pressure_machine.png"
+                MaximumWidthRequest="500"
+            />
+
+            <VerticalStackLayout Spacing="5">
+                <Label
+                    Text="{x:Static strings:AppResources.Welcome}"
+                    FontSize="28"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Gray"
+                />
+                <Label
+                    Text="{x:Static strings:AppResources.LoginMessage}"
+                    FontSize="18"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Gray"
+                />
+            </VerticalStackLayout>
+
+            <Entry
+                Text="{Binding UserEmail}"
+                Placeholder="{x:Static strings:AppResources.EmailPlaceholder}"
+                WidthRequest="330"
+            />
+
+            <Entry
+                Text="{Binding Password}"
+                IsPassword="True"
+                Placeholder="{x:Static strings:AppResources.PasswordPlaceholder}"
+                WidthRequest="330"
+            />
+
+            <HorizontalStackLayout VerticalOptions="Center">
+                <!--
+                Add event handler to checkbox with .NET MAUI Community Toolkit.
+                
+                Ref. #1: https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/behaviors/event-to-command-behavior
+                Ref. #2: https://github.com/CommunityToolkit/Maui
+                
+                1. NuGet CommunityToolkit.Maui
+                2. Follow Ref. #1 (Using the EventToCommandBehavior) and Ref. #2(Getting Started)
+                -->
+                <CheckBox IsChecked="{Binding SavePasswordEnabled}">
+                    <CheckBox.Behaviors>
+                        <toolkit:EventToCommandBehavior
+                            EventName="CheckedChanged"
+                            Command="{Binding Source={x:Reference Page}, Path=BindingContext.CheckSavePWDCommand}" />
+                    </CheckBox.Behaviors>
+                </CheckBox>
+                <Label
+                    Text="{x:Static strings:AppResources.SavePassword}"
+                    VerticalOptions="Center"
+                />
+            </HorizontalStackLayout>
+
+            <Button
+                Text="{x:Static strings:AppResources.SignInBtn}"
+                Command="{Binding LoginCommand}"
+                CornerRadius="20"
+                HorizontalOptions="Center" 
+                WidthRequest="100"
+            />
+            <Button
+                Text="{x:Static strings:AppResources.RegisterBtn}"
+                Command="{Binding RegisterCommand}"
+                CornerRadius="20"
+                HorizontalOptions="Center" 
+                WidthRequest="100"
+            />
+
+            <Button
+                Text="ⓘ"
+                Command="{Binding AboutAppCommand}"
+                CornerRadius="20"
+                FontSize="20"
+                FontAttributes="Bold"
+                Padding="5"
+                HorizontalOptions="End"
+                MinimumHeightRequest="40"
+                MinimumWidthRequest="40"
+            />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
